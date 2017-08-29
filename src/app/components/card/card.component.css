@@ -1,0 +1,106 @@
+.wrap-card {
+	background-color: #fff;
+	border-radius: 2px;
+  border: none;
+  padding: 10px 0;
+	box-shadow: 0 0 5px 5px #f0f0f0;
+}
+
+.card-username {
+  font-size: 16px;
+  color: #666;
+  font-weight: 600;
+}
+
+.card-setting {
+  font-size: 16px;
+  color: #aaa;
+  padding: 4px 5px;
+  border-radius: 50%;
+}
+
+.card-setting:hover,
+.card-setting:focus,
+.card-setting:active {
+  transition: 0.2s;
+  text-decoration: none;
+  color: #666;
+  background-color: inherit;
+}
+
+.datetime {
+  color: #888;
+  font-size: 11px;
+}
+
+.wrap-card-heading,
+.wrap-card-content {
+  padding: 10px;
+}
+
+.card-heading {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-status {
+  font-size: 16px;
+  color: #666;
+  padding: 10px 0;
+}
+
+.wrap-card-footing {
+  padding: 0;
+}
+
+.wrap-card-like-comment-share {
+  padding: 10px;
+}
+
+.wrap-card-footing {
+  border-top: 1px solid #d8d8d8;
+}
+
+.wrap-card-comment {
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid #d8d8d8;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.card-count-number {
+  color: #666;
+  font-size: 11px;
+}
+
+.form-control-comment {
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.form-control-comment:focus {
+  border: 1px solid #909095;
+  box-shadow: none;
+}
+
+.img-post {
+  width: 100%;
+  border: 1px solid #f8f8f8;
+}
+
+.btn-no-like:hover {
+  color: #0077dd;
+  background-color: inherit;
+}
+
+.post-setting {
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 5px 15px #888;
+}

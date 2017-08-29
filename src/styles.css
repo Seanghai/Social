@@ -1,0 +1,42 @@
+body {
+  background-color: #f8f8f8;
+}
+.page-content {
+  padding: 70px 0 0 0;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.btn {
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger,
+.btn-default:hover,
+.btn-primary:hover,
+.btn-success:hover,
+.btn-info:hover,
+.btn-warning:hover,
+.btn-danger:hover {
+  border: none;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.img-width-100 {
+  width: 100%;
+}
+
+.page-height {
+  min-height: 100vh;
+}

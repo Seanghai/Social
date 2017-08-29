@@ -1,0 +1,13 @@
+.jumbotron {
+  background-color: #fff;
+  box-shadow: 0 5px 10px #ccc;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  border-radius: 3px;
+}
+
+.jumbotron .h1,
+.jumbotron h1 {
+  color: #666;
+}

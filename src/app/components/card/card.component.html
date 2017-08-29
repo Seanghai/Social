@@ -1,0 +1,74 @@
+<div class="col-sm-12 col-xs-12 nopadding margin-bottom-15">
+  <div class="col-sm-12 col-xs-12 wrap-card">
+    <div class="col-sm-12 col-xs-12 wrap-card-heading">
+      <div class="col-sm-10 col-xs-10 nopadding">
+        <div class="card-heading">
+          <img src="{{_profileImage}}" width="50" class="img-circle">
+        </div>
+        <div class="card-heading card-username">
+          <div>{{_profileName}}</div>
+          <div class="datetime">{{_dateTime}}</div>
+        </div>
+      </div>
+      <div class="col-sm-2 col-xs-2 nopadding">
+        <div class="pull-right">
+          <a href="#" class="dropdown-toggle card-setting" type="button" id="post-setting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu post-setting" aria-labelledby="post-setting">
+            <li>
+              <a routerLink="#"><i class="fa fa-bookmark-o"></i> Saved</a>
+            </li>
+            <li>
+              <a routerLink="#"><i class="fa fa-edit"></i> Edit</a>
+            </li>
+            <li>
+              <a routerLink="#"><i class="fa fa-trash-o"></i> Delete</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-xs-12 wrap-card-content">
+      <div class="col-sm-12 col-xs-12 card-status">
+        {{_status}}
+      </div>
+      <div class="col-sm-12 col-xs-12 nopadding">
+        <img src="{{_image}}" class="img-responsive img-post">
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-xs-12 wrap-card-footing">
+      <div class="col-sm-12 col-xs-12 nopadding wrap-card-like-comment-share">
+        <div class="col-sm-4 col-xs-4 nopadding">
+          <button class="btn btn-primary" *ngIf="_like" (click)="toggleLike()"><i class="fa fa-thumbs-o-up"></i></button>
+          <button class="btn btn-default btn-no-like" *ngIf="!_like" (click)="toggleLike()"><i class="fa fa-thumbs-o-up"></i></button>
+          <span class="card-count-number">{{_numberLike}} Likes</span>
+        </div>
+        <div class="col-sm-4 col-xs-4 nopadding">
+          <div class="card-count-number" style="padding-top: 10px; text-align: center">{{numberComment}} Comments</div>
+        </div>
+        <div class="col-sm-4 col-xs-4 nopadding">
+          <div class="pull-right">
+            <span class="card-count-number">{{_numberShare}} Shares</span>
+            <button class="btn btn-info"><i class="fa fa-share-alt"></i></button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-12 col-xs-12 nopadding wrap-card-comment">
+        <form class="form-horizontal">
+          <div class="form-group margin-bottom-0">
+            <div class="col-sm-2 col-xs-2">
+              <img src="{{_profileImage}}" width="35" class="img-circle" />
+            </div>
+            <div class="col-sm-10 col-xs-10">
+              <input type="text" class="form-control form-control-comment" placeholder="comment..."/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

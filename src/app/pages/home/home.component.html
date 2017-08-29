@@ -1,0 +1,28 @@
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-2 hidden-xs">
+        <!--<app-home-sidebar></app-home-sidebar>-->
+      </div>
+      <div class="col-md-6 col-sm-8 col-xs-12">
+        <app-card
+          [_profileImage]="profileImage"
+          [_profileName]="profileName"
+          [_dateTime]="dateTime"
+          [_status]="status"
+          [_image]="image"
+          [_video]="video"
+          [_like]="like"
+          [_numberLike]="numberLike"
+          [_comment]="comment"
+          [_share]="share"
+          [_numberShare]="numberShare"
+        ></app-card>
+        <div class="spinner-center">
+          <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-2 hidden-xs"></div>
+    </div>
+  </div>
+</div>
